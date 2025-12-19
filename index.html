@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelius Private Wealth</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0c0c0c;
+    color: #eaeaea;
+    line-height: 1.7;
+}
+
+header {
+    padding: 60px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,215,0,0.15);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #cfcfcf;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #d4af37;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 700px;
+    font-size: 18px;
+    color: #d0d0d0;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.service-card {
+    background: #141414;
+    padding: 35px;
+    border: 1px solid rgba(212,175,55,0.15);
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #d4af37;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #cfcfcf;
+}
+
+.cta {
+    background: linear-gradient(145deg, #111, #000);
+    border-top: 1px solid rgba(212,175,55,0.2);
+    border-bottom: 1px solid rgba(212,175,55,0.2);
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 16px 40px;
+    color: #000;
+    background: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+.cta a:hover {
+    background: #e6c35c;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid rgba(212,175,55,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Aurelius Private Wealth</h1>
+    <p>Discretion. Discipline. Distinction.</p>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about" class="about">
+    <h2>Our Philosophy</h2>
+    <p>
+        Aurelius Private Wealth provides bespoke financial strategies for
+        discerning individuals and families. We focus on capital preservation,
+        intelligent growth, and long-term legacy planning with absolute discretion.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Private Services</h2>
+
+    <div class="services">
+        <div class="service-card">
+            <h3>Wealth Management</h3>
+            <p>Strategic portfolio construction designed to protect and grow generational wealth.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Investment Advisory</h3>
+            <p>Data-driven investment strategies aligned with your long-term objectives.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Retirement & Legacy</h3>
+            <p>Comprehensive planning to ensure continuity, stability, and confidence.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Tax & Estate Strategy</h3>
+            <p>Advanced structuring to optimize efficiency and preserve capital.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta" id="contact">
+    <h2>Private Consultation</h2>
+    <p>Begin a confidential conversation about your financial future.</p>
+    <a href="mailto:concierge@aureliuswealth.com">Request Access</a>
+</section>
+
+<footer>
+    © 2025 Aurelius Private Wealth. All Rights Reserved.
+</footer>
+
+</body>
+</html>
