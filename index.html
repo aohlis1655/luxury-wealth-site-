@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Aurelius Private Wealth</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -11,32 +11,37 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #0c0c0c;
+    background-color: #0b0b0b;
     color: #eaeaea;
     line-height: 1.7;
 }
 
 header {
-    padding: 60px 40px;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 30px;
     text-align: center;
-    border-bottom: 1px solid rgba(255,215,0,0.15);
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    letter-spacing: 2px;
+    font-size: 52px;
     color: #d4af37;
-    margin-bottom: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
 header p {
-    font-size: 18px;
-    color: #cfcfcf;
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    color: #dddddd;
 }
 
 nav {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 nav a {
@@ -50,88 +55,74 @@ nav a {
 section {
     max-width: 1100px;
     margin: auto;
-    padding: 80px 30px;
+    padding: 90px 30px;
 }
 
-section h2 {
+h2 {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     color: #d4af37;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .about p {
-    max-width: 700px;
+    max-width: 800px;
     font-size: 18px;
-    color: #d0d0d0;
+    color: #cfcfcf;
 }
 
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 35px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.service-card {
+.service {
     background: #141414;
     padding: 35px;
-    border: 1px solid rgba(212,175,55,0.15);
-    transition: transform 0.3s ease, border 0.3s ease;
+    border: 1px solid rgba(212,175,55,0.2);
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    border-color: #d4af37;
-}
-
-.service-card h3 {
+.service h3 {
     font-family: 'Playfair Display', serif;
     color: #d4af37;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    color: #cfcfcf;
+    margin-bottom: 10px;
 }
 
 .cta {
-    background: linear-gradient(145deg, #111, #000);
-    border-top: 1px solid rgba(212,175,55,0.2);
-    border-bottom: 1px solid rgba(212,175,55,0.2);
+    background: #111;
     text-align: center;
-}
-
-.cta h2 {
-    margin-bottom: 15px;
-}
-
-.cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    padding: 80px 30px;
+    border-top: 1px solid rgba(212,175,55,.2);
+    border-bottom: 1px solid rgba(212,175,55,.2);
 }
 
 .cta a {
     display: inline-block;
-    padding: 16px 40px;
-    color: #000;
     background: #d4af37;
-    text-decoration: none;
+    color: #000;
+    padding: 16px 40px;
     font-weight: 600;
     letter-spacing: 1px;
-    transition: background 0.3s ease;
-}
-
-.cta a:hover {
-    background: #e6c35c;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
 footer {
-    text-align: center;
-    padding: 30px;
+    background: #080808;
+    padding: 40px 30px;
     font-size: 14px;
-    color: #aaa;
-    border-top: 1px solid rgba(212,175,55,0.1);
+    color: #999;
+    text-align: center;
+}
+
+.disclaimer {
+    max-width: 900px;
+    margin: auto;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
 }
 </style>
 </head>
@@ -140,10 +131,13 @@ footer {
 
 <header>
     <h1>Aurelius Private Wealth</h1>
-    <p>Discretion. Discipline. Distinction.</p>
+    <p>
+        Bespoke wealth management for individuals and families seeking
+        clarity, discretion, and long-term financial confidence.
+    </p>
 
     <nav>
-        <a href="#about">About</a>
+        <a href="#about">Philosophy</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -152,46 +146,54 @@ footer {
 <section id="about" class="about">
     <h2>Our Philosophy</h2>
     <p>
-        Aurelius Private Wealth provides bespoke financial strategies for
-        discerning individuals and families. We focus on capital preservation,
-        intelligent growth, and long-term legacy planning with absolute discretion.
+        Aurelius Private Wealth delivers personalized financial strategies rooted in
+        discipline, transparency, and long-term thinking. We act as trusted
+        advisors to our clients, helping them preserve and grow capital across
+        generations.
     </p>
 </section>
 
 <section id="services">
-    <h2>Private Services</h2>
+    <h2>Private Client Services</h2>
 
     <div class="services">
-        <div class="service-card">
+        <div class="service">
             <h3>Wealth Management</h3>
-            <p>Strategic portfolio construction designed to protect and grow generational wealth.</p>
+            <p>Customized portfolio management designed to align with your goals and risk profile.</p>
         </div>
 
-        <div class="service-card">
+        <div class="service">
             <h3>Investment Advisory</h3>
-            <p>Data-driven investment strategies aligned with your long-term objectives.</p>
+            <p>Strategic guidance across public and private markets.</p>
         </div>
 
-        <div class="service-card">
-            <h3>Retirement & Legacy</h3>
-            <p>Comprehensive planning to ensure continuity, stability, and confidence.</p>
+        <div class="service">
+            <h3>Retirement & Legacy Planning</h3>
+            <p>Thoughtful planning to ensure continuity and peace of mind.</p>
         </div>
 
-        <div class="service-card">
-            <h3>Tax & Estate Strategy</h3>
-            <p>Advanced structuring to optimize efficiency and preserve capital.</p>
+        <div class="service">
+            <h3>Tax-Aware Strategies</h3>
+            <p>Integrated planning focused on efficiency and capital preservation.</p>
         </div>
     </div>
 </section>
 
 <section class="cta" id="contact">
-    <h2>Private Consultation</h2>
+    <h2>Request a Private Consultation</h2>
     <p>Begin a confidential conversation about your financial future.</p>
-    <a href="mailto:concierge@aureliuswealth.com">Request Access</a>
+    <a href="mailto:concierge@aureliuswealth.com">Contact Our Team</a>
 </section>
 
 <footer>
     © 2025 Aurelius Private Wealth. All Rights Reserved.
+
+    <div class="disclaimer">
+        This website is for informational purposes only and does not constitute
+        investment advice or an offer to buy or sell securities. Past performance
+        is not indicative of future results. Advisory services are provided subject
+        to applicable laws and regulations.
+    </div>
 </footer>
 
 </body>
